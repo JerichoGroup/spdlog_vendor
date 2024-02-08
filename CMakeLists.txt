@@ -55,9 +55,8 @@ macro(build_spdlog)
   include(ExternalProject)
 
   # Get spdlog 1.8.2
-  externalproject_add(spdlog-1.8.2
-    URL https://github.com/gabime/spdlog/archive/v1.8.2.tar.gz
-    URL_MD5 22518fb28d4be66c92a703c67d99b1d1
+  externalproject_add(spdlog-1.12.0
+    URL https://github.com/gabime/spdlog/archive/v1.12.0.tar.gz
     TIMEOUT 600
     CMAKE_ARGS
       -DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install
